@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style-fonts.css"/>
+    <title>Form Exercsie</title>
+</head>
+
+<body>
+    <h2>Register</h1>
+        <form>
+            <label>
+                First name:
+                <input name="FirstName" type="text" placeholder="John" required>
+            </label>
+
+            <label>
+                Last name:
+                <input name="LastName" type="text" placeholder="Smith" required>
+            </label>
+
+            <div>
+                <label>Male
+                    <input type="radio" name="Gender" id="MALE" value="MALE">
+                </label>
+
+                <label>Female
+                    <input type="radio" name="Gender" id="FEMAL" value="FEMALE">
+                </label>
+
+                <label>Other
+                    <input type="radio" name="Gender" id="OTHER" value="OTHER">
+                </label>
+            </div>
+
+            <div>
+                <label>Email:
+                    <input type="email" name="EMail" id="" placeholder="your email" required>
+                </label>
+
+                <label>Password:
+                    <input type="password" name="Password" id="" placeholder="your password" required maxlength="10" minlength="5">
+                </label>
+            </div>
+
+
+            <div>
+                <label>Birthday:
+                    <select name="Month" id="">
+                        <option value="">--Moth--</option>
+                        <option value="1月">一月</option>
+                        <option value="2月">二月</option>
+                        <option value="3月">三月</option>
+                    </select>
+                    <select name="Day" id="">
+                        <option value="">--Day--</option>
+                        <option value="day1">1</option>
+                        <option value="day2">2</option>
+                        <option value="day3">3</option>
+                    </select>
+                    <select name="Year" id="">
+                        <option value="">--Year--</option>
+                        <option value="year1">2019</option>
+                        <option value="year2">2020</option>
+                        <option value="year3">2021</option>
+                    </select>
+                </label>
+            </div>
+            <!-- <input type="datetime-local" name="" id=""> -->
+            <!-- <br> -->
+            <label for="">
+                I agree the terms and private policy
+                <input type="checkbox" name="Policy" id="">
+            </label>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+</body>
+
+</html>
